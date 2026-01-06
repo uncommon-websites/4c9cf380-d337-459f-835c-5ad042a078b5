@@ -12,11 +12,11 @@
 	const XIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 18 18"/></svg>`;
 
 	let faqs = [
-		{ question: "What does a Holo membership include?", open: false },
-		{ question: "Is Holo for you?", open: false },
-		{ question: "What more does Holo offer than my regular doctor or insurance?", open: false },
-		{ question: "I recently got tested. Should I wait to join Holo?", open: false },
-		{ question: "Which biomarkers are included in the Holo membership?", open: false }
+		{ question: "How is CORTEX LIFE different from fitness wearables?", open: false },
+		{ question: "What can breath gas analysis tell me that wearables can't?", open: false },
+		{ question: "Is CORTEX LIFE covered by insurance?", open: false },
+		{ question: "Do I need to go to a clinic for testing?", open: false },
+		{ question: "How does the AI interpretation work?", open: false }
 	];
 
 	function toggleFaq(index: number) {
@@ -30,42 +30,77 @@
 <div class="min-h-screen flex flex-col font-sans text-gray-900 bg-[#FAFAFA]">
 	<!-- Top Banner -->
 	<div class="bg-black text-white text-[11px] font-medium py-3 text-center tracking-wide px-4">
-		15% off for yourself or for someone you care about with the code GIFT15 until December 31.
+		Clinically accurate metabolic insights. Now available through insurance reimbursement.
 	</div>
 
 	<!-- Navigation -->
 	<nav class="flex items-center justify-between px-6 md:px-12 py-5 bg-[#FAFAFA]">
 		<div class="flex items-center gap-2">
 			<!-- Logo -->
-			<div class="flex items-center gap-2">
-				<div class="grid grid-cols-2 gap-[2px]">
-					<div class="w-1 h-1 bg-black rounded-full"></div>
-					<div class="w-1 h-1 bg-black rounded-full"></div>
-					<div class="w-1 h-1 bg-black rounded-full"></div>
-					<div class="w-1 h-1 bg-black rounded-full"></div>
+			<div class="flex items-center gap-3">
+				<div class="w-7 h-7 text-black">
+					<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask
+							id="mask0_161_7365"
+							style="mask-type:luminance"
+							maskUnits="userSpaceOnUse"
+							x="3"
+							y="1"
+							width="18"
+							height="22"
+						>
+							<path d="M3 1H20.7794V22.3353H3V1Z" fill="white" />
+						</mask>
+						<g mask="url(#mask0_161_7365)">
+							<path
+								d="M14.1516 3.24638L12.4034 2.77795L10.9302 8.27606L9.60014 3.31233L7.85194 3.78076L9.28896 9.14369L5.70969 5.56443L4.42993 6.84419L8.35594 10.7702L3.46671 9.46017L2.99829 11.2083L8.34038 12.6397C8.27922 12.3759 8.24687 12.1011 8.24687 11.8187C8.24687 9.81953 9.86746 8.19894 11.8666 8.19894C13.8657 8.19894 15.4863 9.81953 15.4863 11.8187C15.4863 12.0993 15.4544 12.3724 15.394 12.6347L20.2489 13.9356L20.7173 12.1874L15.354 10.7503L20.2436 9.44012L19.7751 7.69196L14.412 9.12898L17.9913 5.54972L16.7115 4.26998L12.84 8.14156L14.1516 3.24638Z"
+								fill="currentColor"
+							/>
+							<path
+								d="M15.3888 12.655C15.2389 13.2887 14.9225 13.8579 14.4883 14.314L18.0056 17.8313L19.2853 16.5515L15.3888 12.655Z"
+								fill="currentColor"
+							/>
+							<path
+								d="M14.4529 14.3508C14.0135 14.7996 13.4582 15.1345 12.8354 15.3071L14.1153 20.0836L15.8635 19.6151L14.4529 14.3508Z"
+								fill="currentColor"
+							/>
+							<path
+								d="M12.7701 15.3246C12.4812 15.3989 12.1784 15.4384 11.8663 15.4384C11.5319 15.4384 11.2082 15.393 10.9008 15.3082L9.61981 20.089L11.368 20.5574L12.7701 15.3246Z"
+								fill="currentColor"
+							/>
+							<path
+								d="M10.839 15.2905C10.2258 15.1093 9.68038 14.7702 9.24994 14.3201L5.72406 17.8459L7.00382 19.1257L10.839 15.2905Z"
+								fill="currentColor"
+							/>
+							<path
+								d="M9.22084 14.2889C8.79778 13.836 8.48962 13.2743 8.34294 12.6505L3.47211 13.9556L3.94053 15.7038L9.22084 14.2889Z"
+								fill="currentColor"
+							/>
+						</g>
+					</svg>
 				</div>
-				<span class="text-xl font-bold tracking-tight">HOLO</span>
+				<span class="text-xl font-bold tracking-tight">CORTEX LIFE</span>
 			</div>
 		</div>
 		<div class="hidden md:flex items-center gap-8 text-[13px] font-medium text-gray-600">
-			<a href="#" class="hover:text-black transition-colors">Biomarkers</a>
+			<a href="#" class="hover:text-black transition-colors">Technology</a>
+			<a href="#" class="hover:text-black transition-colors">For Athletes</a>
+			<a href="#" class="hover:text-black transition-colors">For Clinics</a>
 			<a href="#" class="hover:text-black transition-colors">FAQ</a>
-			<a href="#" class="hover:text-black transition-colors">Blog</a>
-			<a href="#" class="hover:text-black transition-colors">Gift Holo</a>
-			<a href="#" class="bg-black text-white px-5 py-2 rounded text-[13px] font-medium hover:bg-gray-800 transition-colors">Join now</a>
+			<a href="#" class="bg-black text-white px-5 py-2 rounded text-[13px] font-medium hover:bg-gray-800 transition-colors">Get Started</a>
 		</div>
 	</nav>
 
 	<!-- Hero Section -->
 	<section class="flex flex-col items-center pt-16 pb-20 px-4 text-center">
 		<h1 class="text-4xl md:text-[56px] leading-[1.1] font-medium tracking-tight max-w-3xl mb-6">
-			Your companion<br>for lifelong vitality.
+			Clinical-grade metabolic insights.<br>Mobile. AI-powered. Precise.
 		</h1>
 		<p class="text-gray-500 text-[15px] max-w-xl mb-8 leading-relaxed">
-			Test 60+ biomarkers every year, track all your health in a single place, and get insights from top doctors. All starting at just €199.
+			True breath-by-breath gas exchange measurement (O₂/CO₂) that delivers training zones, recovery signals, and metabolic flexibility insights—not rough estimates.
 		</p>
 		<button class="bg-black text-white px-6 py-3 rounded text-[13px] font-medium hover:bg-gray-800 transition-colors mb-20">
-			Start testing
+			Start Your Analysis
 		</button>
 
 		<!-- Horizontal Scroll Images -->
@@ -73,27 +108,27 @@
 			<div class="flex gap-6 justify-center items-center h-[320px]">
 				<!-- Image 1 -->
 				<div class="w-[200px] h-[260px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[-2deg] translate-y-4">
-					<img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?w=400&h=600&fit=crop" alt="Climbing" class="w-full h-full object-cover" />
+					<img src="/generated/image-athletic-person-using-a-portable-breath--1767713568945-0.webp" alt="Athlete using breath analysis" class="w-full h-full object-cover" />
 				</div>
 				<!-- Image 2 -->
 				<div class="w-[260px] h-[180px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[1deg] -translate-y-2">
-					<img src="https://images.unsplash.com/photo-1502086223501-681a5812147d?w=400&h=300&fit=crop" alt="Bench" class="w-full h-full object-cover" />
+					<img src="/generated/image-person-using-portable-breath-device-whil-1767713592199-8.webp" alt="Checking training zones" class="w-full h-full object-cover" />
 				</div>
 				<!-- Image 3 -->
 				<div class="w-[220px] h-[220px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[-1deg] translate-y-2">
-					<img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=400&fit=crop" alt="Hiking" class="w-full h-full object-cover" />
+					<img src="/generated/image-cyclist-using-breath-measurement-device--1767713575283-2.webp" alt="Cyclist metabolic testing" class="w-full h-full object-cover" />
 				</div>
 				<!-- Image 4 -->
 				<div class="w-[200px] h-[200px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[2deg] -translate-y-4">
-					<img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=400&h=400&fit=crop" alt="Running" class="w-full h-full object-cover" />
+					<img src="/generated/image-runner-checking-metabolic-data-on-mobile-1767713572197-1.webp" alt="Runner with mobile app" class="w-full h-full object-cover" />
 				</div>
 				<!-- Image 5 -->
 				<div class="w-[180px] h-[260px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[-2deg] translate-y-6">
-					<img src="https://images.unsplash.com/photo-1551524164-687a55dd1126?w=400&h=600&fit=crop" alt="Snow" class="w-full h-full object-cover" />
+					<img src="/generated/image-professional-athlete-in-recovery-using-b-1767713580939-4.webp" alt="Recovery monitoring" class="w-full h-full object-cover" />
 				</div>
 				<!-- Image 6 -->
 				<div class="w-[200px] h-[160px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[1deg] -translate-y-2">
-					<img src="https://images.unsplash.com/photo-1596328616956-619f70d748d6?w=400&h=300&fit=crop" alt="Park" class="w-full h-full object-cover" />
+					<img src="/generated/image-health-conscious-person-analyzing-metabo-1767713578179-3.webp" alt="Health insights" class="w-full h-full object-cover" />
 				</div>
 			</div>
 		</div>
@@ -139,16 +174,13 @@
 			<!-- Content -->
 			<div class="flex-1 max-w-lg">
 				<h2 class="text-3xl font-medium mb-6 leading-tight">
-					Your health at a glance.<br>
-					See your daily Strain, Recovery and Sleep goals.
-					Explore your biomarkers, understand what
-					they mean, and access your Clinician Notes,
-					including your Action Plan created after your test.
+					Your metabolic profile at a glance.<br>
+					Real-time VO₂ and VCO₂ measurements translated by AI into training zones, recovery status, and metabolic flexibility scores. Track your progress and optimize performance with clinical precision.
 				</h2>
 				<div class="flex items-center justify-between mt-12">
-					<a href="#" class="flex items-center gap-2 text-blue-600 text-sm font-medium hover:underline">
+					<a href="#" class="flex items-center gap-2 text-primary-600 text-sm font-medium hover:underline">
 						{@html PlayCircle}
-						Watch video
+						Watch demo
 					</a>
 					<div class="flex gap-4">
 						<button class="w-8 h-8 flex items-center justify-center rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
@@ -167,36 +199,36 @@
 	<section class="py-20 px-6 md:px-12 max-w-[1400px] mx-auto w-full">
 		<div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-10">
 			<h2 class="text-4xl md:text-5xl font-medium tracking-tight max-w-md leading-[1.1]">
-				You deserve to live fully, longer, and better.
+				Beyond wearables. Beyond estimates.
 			</h2>
 			<p class="text-gray-500 text-[15px] max-w-md leading-relaxed">
-				Your health is more than numbers, it's your story, your future. Taking care of it today means giving yourself the chance to enjoy more years with strength, clarity, and vitality. We're here to help you protect what truly matters: a healthier, longer life.
+				CORTEX LIFE bridges the gap between inaccurate consumer wearables and expensive clinic-bound diagnostics. Get clinical-grade metabolic insights anywhere, enhanced by AI that translates complex data into actionable guidance for performance, recovery, and longevity.
 			</p>
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 			<!-- Card 1 -->
 			<div class="relative h-[480px] rounded-[32px] overflow-hidden group">
-				<img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=800&fit=crop" alt="Woman smiling" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+				<img src="/generated/image-fitness-trainer-demonstrating-breath-gas-1767713583774-5.webp" alt="Clinical validation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 				<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
-					<h3 class="text-2xl font-medium mb-2">All your data. One place.</h3>
-					<p class="text-sm text-white/80 leading-relaxed">Holo takes into account your lifestyle and habits, your past results, and connects your wearables data.</p>
+					<h3 class="text-2xl font-medium mb-2">Clinical lineage.</h3>
+					<p class="text-sm text-white/80 leading-relaxed">Technology derived from validated spiroergometry, not consumer sensors. Trusted by medical professionals.</p>
 				</div>
 			</div>
 			<!-- Card 2 -->
 			<div class="relative h-[480px] rounded-[32px] overflow-hidden group">
-				<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&h=800&fit=crop" alt="Man running" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+				<img src="/generated/image-elite-endurance-athlete-during-metabolic-1767713589502-7.webp" alt="Athlete performance" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 				<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
-					<h3 class="text-2xl font-medium mb-2">Better control over your performance.</h3>
-					<p class="text-sm text-white/80 leading-relaxed">Start thriving by tracking your daily strain, recovery and sleep.</p>
+					<h3 class="text-2xl font-medium mb-2">Precision performance.</h3>
+					<p class="text-sm text-white/80 leading-relaxed">True breath-by-breath O₂/CO₂ measurement delivers accurate training zones and recovery signals.</p>
 				</div>
 			</div>
 			<!-- Card 3 -->
 			<div class="relative h-[480px] rounded-[32px] overflow-hidden group">
-				<img src="https://images.unsplash.com/photo-1529113247322-132d7844a497?w=600&h=800&fit=crop" alt="Family" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+				<img src="/generated/image-health-conscious-person-analyzing-metabo-1767713578179-3.webp" alt="Longevity insights" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 				<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
-					<h3 class="text-2xl font-medium mb-2">Proactive care.</h3>
-					<p class="text-sm text-white/80 leading-relaxed">Health is not only the absence of illness but having strength and vitality everyday.</p>
+					<h3 class="text-2xl font-medium mb-2">Metabolic longevity.</h3>
+					<p class="text-sm text-white/80 leading-relaxed">Track metabolic flexibility and longevity indicators with longitudinal breath-data insights.</p>
 				</div>
 			</div>
 		</div>
@@ -206,13 +238,13 @@
 	<section class="py-24 px-6 text-center bg-[#F5F5F3]">
 		<div class="max-w-3xl mx-auto">
 			<blockquote class="text-2xl md:text-3xl font-medium leading-tight mb-10">
-				"I've always wanted a tool like Holo. It gives people real power over their health in a way that's simple and intuitive. I love how deeply personalized it is, making it easier than ever to understand your body and make smart choices"
+				"CORTEX LIFE delivers the clinical accuracy we need in metabolic diagnostics, but with the accessibility athletes demand. The AI interpretation layer transforms complex gas exchange data into actionable insights that actually improve training outcomes."
 			</blockquote>
 			<div class="flex flex-col items-center gap-3">
-				<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop" alt="Doctor" class="w-12 h-12 rounded-full object-cover" />
+				<img src="/generated/image-confident-sports-medicine-doctor-with-br-1767713586632-6.webp" alt="Sports Medicine Doctor" class="w-12 h-12 rounded-full object-cover" />
 				<div class="text-sm">
-					<div class="font-bold">Dra. Cocco Meradi</div>
-					<div class="text-gray-500">Functional Doctor</div>
+					<div class="font-bold">Dr. Sarah Mitchell</div>
+					<div class="text-gray-500">Sports Medicine Physician</div>
 				</div>
 			</div>
 		</div>
@@ -222,16 +254,16 @@
 	<section class="py-20 px-6 md:px-12 max-w-[1400px] mx-auto w-full border-b border-gray-200">
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
 			<div>
-				<h3 class="text-xl font-medium mb-2">15 minutes lab visit.</h3>
-				<p class="text-sm text-gray-500 leading-relaxed">In and out. Take your blood and urine test. One minute with the nurse. Quick and simple.</p>
+				<h3 class="text-xl font-medium mb-2">Breath-by-breath accuracy.</h3>
+				<p class="text-sm text-gray-500 leading-relaxed">True gas exchange measurement (O₂/CO₂), not inferred estimates. Clinical precision in a mobile device.</p>
 			</div>
 			<div>
-				<h3 class="text-xl font-medium mb-2">24 hours first results.</h3>
-				<p class="text-sm text-gray-500 leading-relaxed">Your lab test data, fast. Complete results in five business days.</p>
+				<h3 class="text-xl font-medium mb-2">Instant AI interpretation.</h3>
+				<p class="text-sm text-gray-500 leading-relaxed">Complex metabolic data translated into training zones, recovery signals, and actionable insights.</p>
 			</div>
 			<div>
-				<h3 class="text-xl font-medium mb-2">Clinician Notes in 1 week.</h3>
-				<p class="text-sm text-gray-500 leading-relaxed">From data to a clear Action Plan to guide you along your health path.</p>
+				<h3 class="text-xl font-medium mb-2">Insurance reimbursement.</h3>
+				<p class="text-sm text-gray-500 leading-relaxed">Start with clinically validated diagnostics covered by insurance, expand into performance optimization.</p>
 			</div>
 		</div>
 	</section>
@@ -243,7 +275,7 @@
 			<div class="lg:w-1/3 lg:sticky lg:top-24 h-fit">
 				<h2 class="text-4xl font-medium mb-6">How it works.</h2>
 				<p class="text-gray-500 text-[15px] leading-relaxed max-w-xs">
-					With two lab tests a year, daily tracking from your phone and wearables, and guidance from real doctors, Holo helps you understand what's going on inside so you can make smarter, healthier choices.
+					From initial clinical assessment through ongoing performance optimization, CORTEX LIFE delivers precise metabolic insights enhanced by AI interpretation—accessible anywhere, anytime.
 				</p>
 			</div>
 
@@ -253,27 +285,27 @@
 				<div class="bg-white rounded-[32px] p-10 md:p-16 flex flex-col items-center text-center shadow-sm">
 					<div class="w-full max-w-md mb-10 text-left self-start">
 						<div class="w-8 h-8 rounded border border-gray-200 flex items-center justify-center text-xs font-medium mb-6">1</div>
-						<h3 class="text-2xl font-medium mb-3">Chose the plan that fits you better.</h3>
-						<p class="text-sm text-gray-500 leading-relaxed">Two options available. Set the Core plan with 60+ biomarkers to access the most advance lab test or choose the Starter plan to test 40+ essential biomarkers.</p>
+						<h3 class="text-2xl font-medium mb-3">Choose your pathway.</h3>
+						<p class="text-sm text-gray-500 leading-relaxed">Start with insurance-reimbursed clinical diagnostics, or jump directly to athlete performance optimization. Both paths deliver the same clinical-grade accuracy.</p>
 					</div>
 					<div class="w-[240px] h-[480px] bg-black rounded-[36px] p-2 shadow-xl border-4 border-gray-100">
 						<div class="w-full h-full bg-white rounded-[28px] overflow-hidden relative flex flex-col">
                             <!-- Mock UI -->
                             <div class="bg-gray-50 p-4 border-b">
-                                <div class="h-4 w-20 bg-gray-200 rounded mb-2"></div>
+                                <div class="h-4 w-32 bg-gray-200 rounded mb-2"></div>
                             </div>
                             <div class="p-4 space-y-3">
-                                <div class="h-12 bg-green-50 rounded-lg border border-green-100 p-2">
-                                    <div class="h-2 w-12 bg-green-200 rounded mb-1"></div>
-                                    <div class="h-4 w-24 bg-green-300 rounded"></div>
+                                <div class="h-12 bg-primary-50 rounded-lg border border-primary-100 p-2">
+                                    <div class="h-2 w-16 bg-primary-200 rounded mb-1"></div>
+                                    <div class="h-4 w-28 bg-primary-300 rounded"></div>
                                 </div>
                                 <div class="h-12 bg-white rounded-lg border border-gray-100 p-2">
-                                    <div class="h-2 w-12 bg-gray-200 rounded mb-1"></div>
-                                    <div class="h-4 w-24 bg-gray-300 rounded"></div>
+                                    <div class="h-2 w-16 bg-gray-200 rounded mb-1"></div>
+                                    <div class="h-4 w-28 bg-gray-300 rounded"></div>
                                 </div>
                                 <div class="h-12 bg-white rounded-lg border border-gray-100 p-2">
-                                    <div class="h-2 w-12 bg-gray-200 rounded mb-1"></div>
-                                    <div class="h-4 w-24 bg-gray-300 rounded"></div>
+                                    <div class="h-2 w-16 bg-gray-200 rounded mb-1"></div>
+                                    <div class="h-4 w-28 bg-gray-300 rounded"></div>
                                 </div>
                             </div>
                         </div>
@@ -284,14 +316,22 @@
 				<div class="bg-white rounded-[32px] p-10 md:p-16 flex flex-col items-center text-center shadow-sm">
 					<div class="w-full max-w-md mb-10 text-left self-start">
 						<div class="w-8 h-8 rounded border border-gray-200 flex items-center justify-center text-xs font-medium mb-6">2</div>
-						<h3 class="text-2xl font-medium mb-3">Schedule your appointment.</h3>
-						<p class="text-sm text-gray-500 leading-relaxed">Choose the most convenient lab location for you and follow the instructions before the test.</p>
+						<h3 class="text-2xl font-medium mb-3">Receive your device.</h3>
+						<p class="text-sm text-gray-500 leading-relaxed">Get your CORTEX LIFE mobile breath analyzer. Pair it with the app and complete the simple calibration process.</p>
 					</div>
 					<div class="w-[240px] h-[480px] bg-black rounded-[36px] p-2 shadow-xl border-4 border-gray-100">
                         <div class="w-full h-full bg-white rounded-[28px] overflow-hidden relative flex flex-col items-center pt-8">
-                            <div class="text-sm font-bold mb-4">Appointment</div>
-                            <div class="w-16 h-16 bg-gray-100 rounded-full mb-4"></div>
-                            <div class="text-xs text-gray-500 px-8 text-center">Schedule your visit at a nearby lab.</div>
+                            <div class="text-sm font-bold mb-4">Setup</div>
+                            <div class="w-16 h-16 bg-primary-100 rounded-full mb-4 flex items-center justify-center">
+								<div class="w-8 h-8 text-primary-600">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+										<circle cx="12" cy="12" r="10"/>
+										<path d="M8 12h8"/>
+										<path d="M12 8v8"/>
+									</svg>
+								</div>
+							</div>
+                            <div class="text-xs text-gray-500 px-8 text-center">Connect your device and start your first breath test.</div>
                             <div class="mt-auto w-full p-4">
                                 <div class="w-full h-10 bg-black rounded-lg"></div>
                             </div>
@@ -303,21 +343,27 @@
 				<div class="bg-white rounded-[32px] p-10 md:p-16 flex flex-col items-center text-center shadow-sm">
 					<div class="w-full max-w-md mb-10 text-left self-start">
 						<div class="w-8 h-8 rounded border border-gray-200 flex items-center justify-center text-xs font-medium mb-6">3</div>
-						<h3 class="text-2xl font-medium mb-3">Receive first results.</h3>
-						<p class="text-sm text-gray-500 leading-relaxed">Within 24 hours directly on your app. When all your results are available, our medical team will start working on your Clinician Notes.</p>
+						<h3 class="text-2xl font-medium mb-3">Perform breath analysis.</h3>
+						<p class="text-sm text-gray-500 leading-relaxed">Take breath measurements during rest, training, or recovery. Real-time O₂ and CO₂ data captured with clinical precision.</p>
 					</div>
 					<div class="w-[240px] h-[480px] bg-black rounded-[36px] p-2 shadow-xl border-4 border-gray-100">
                         <div class="w-full h-full bg-gray-900 rounded-[28px] overflow-hidden relative text-white p-6 pt-10">
                              <div class="flex items-center gap-3 mb-6">
-                                 <div class="w-10 h-10 rounded-full bg-gray-700"></div>
+                                 <div class="w-10 h-10 rounded-full bg-primary-900"></div>
                                  <div>
-                                     <div class="text-sm font-bold">Grace Parker</div>
-                                     <div class="text-[10px] text-gray-400">Bio Age: 28</div>
+                                     <div class="text-sm font-bold">Live Analysis</div>
+                                     <div class="text-[10px] text-gray-400">VO₂: 42.3 ml/kg/min</div>
                                  </div>
                              </div>
                              <div class="space-y-2">
-                                 <div class="h-20 bg-gray-800 rounded-xl"></div>
-                                 <div class="h-20 bg-gray-800 rounded-xl"></div>
+                                 <div class="h-20 bg-gray-800 rounded-xl p-3">
+									<div class="text-[10px] text-gray-400 mb-1">O₂ Uptake</div>
+									<div class="h-2 bg-primary-600 rounded w-3/4"></div>
+								 </div>
+                                 <div class="h-20 bg-gray-800 rounded-xl p-3">
+									<div class="text-[10px] text-gray-400 mb-1">CO₂ Output</div>
+									<div class="h-2 bg-primary-500 rounded w-2/3"></div>
+								 </div>
                              </div>
                         </div>
 					</div>
@@ -327,16 +373,19 @@
 				<div class="bg-white rounded-[32px] p-10 md:p-16 flex flex-col items-center text-center shadow-sm">
 					<div class="w-full max-w-md mb-10 text-left self-start">
 						<div class="w-8 h-8 rounded border border-gray-200 flex items-center justify-center text-xs font-medium mb-6">4</div>
-						<h3 class="text-2xl font-medium mb-3">Your Clinician Notes are ready.</h3>
-						<p class="text-sm text-gray-500 leading-relaxed">Receive your Clinician Notes and personalized Action Plan within 7 days from your results.</p>
+						<h3 class="text-2xl font-medium mb-3">Get AI-powered insights.</h3>
+						<p class="text-sm text-gray-500 leading-relaxed">Complex gas exchange data instantly translated into training zones, recovery status, and metabolic flexibility scores.</p>
 					</div>
 					<div class="w-[240px] h-[480px] bg-black rounded-[36px] p-2 shadow-xl border-4 border-gray-100">
                         <div class="w-full h-full bg-white rounded-[28px] overflow-hidden relative flex flex-col pt-8 px-4">
-                            <div class="text-center text-sm font-bold mb-4">Clinician Notes</div>
+                            <div class="text-center text-sm font-bold mb-4">AI Insights</div>
                             <div class="text-[10px] text-gray-500 leading-relaxed text-justify">
-                                You already make smart choices for your health through regular exercise, reduced unhealthy fats and sugars, and limiting sleep disruptors.
+                                Your metabolic data shows excellent fat oxidation capacity at lower intensities, indicating strong metabolic flexibility.
                                 <br><br>
-                                Since your diet lacks enough fruits and vegetables, adding more could strengthen long-term health...
+                                Recommended training zones:<br>
+                                Zone 2: 125-145 bpm<br>
+                                Threshold: 165-175 bpm<br><br>
+                                Current recovery status: Optimal for high-intensity work.
                             </div>
                         </div>
 					</div>
@@ -346,16 +395,16 @@
 				<div class="bg-white rounded-[32px] p-10 md:p-16 flex flex-col items-center text-center shadow-sm">
 					<div class="w-full max-w-md mb-10 text-left self-start">
 						<div class="w-8 h-8 rounded border border-gray-200 flex items-center justify-center text-xs font-medium mb-6">5</div>
-						<h3 class="text-2xl font-medium mb-3">Start improving.</h3>
-						<p class="text-sm text-gray-500 leading-relaxed">Continue your health journey together with Holo AI and your Action Plan. Recheck in 6 months with the follow-up test.</p>
+						<h3 class="text-2xl font-medium mb-3">Track and optimize.</h3>
+						<p class="text-sm text-gray-500 leading-relaxed">Build longitudinal breath-data insights. Monitor metabolic changes over time and optimize training, recovery, and longevity strategies.</p>
 					</div>
 					<div class="w-[240px] h-[480px] bg-black rounded-[36px] p-2 shadow-xl border-4 border-gray-100">
                         <div class="w-full h-full bg-white rounded-[28px] overflow-hidden relative flex flex-col pt-8 px-4">
-                             <div class="bg-gray-100 p-3 rounded-lg text-[10px] mb-2">
-                                 What benefit do I get by keeping ApoB down in the optimal range?
+                             <div class="bg-primary-50 p-3 rounded-lg text-[10px] mb-2 border border-primary-100">
+                                 How has my metabolic flexibility improved?
                              </div>
                              <div class="text-[10px] text-gray-500 leading-relaxed mt-2">
-                                 By lowering ApoB, you've reduced the number of cholesterol-carrying particles in your bloodstream...
+                                 Your fat oxidation rate at Zone 2 intensity has increased 18% over the past 8 weeks, indicating improved metabolic flexibility and endurance capacity...
                              </div>
                         </div>
 					</div>
@@ -370,31 +419,30 @@
 			<!-- Left Card -->
 			<div class="bg-[#111] rounded-[32px] p-10 md:p-12 text-white min-h-[400px] flex flex-col relative overflow-hidden">
 				<div class="relative z-10">
-					<div class="text-xs text-gray-400 mb-2">A five star experience.</div>
-					<h3 class="text-2xl font-medium max-w-xs">We partner exclusively with renowned labs.</h3>
+					<div class="text-xs text-gray-400 mb-2">Clinical validation.</div>
+					<h3 class="text-2xl font-medium max-w-xs">Technology derived from validated spiroergometry.</h3>
 				</div>
-				<!-- Map Graphic Placeholder -->
+				<!-- Abstract breath visualization -->
 				<div class="absolute bottom-0 right-0 w-full h-64 opacity-20">
-                    <!-- Simple dot map simulation with SVG -->
                     <svg viewBox="0 0 200 100" class="w-full h-full">
-                        {#each Array(100) as _, i}
-                            <circle cx={Math.random() * 200} cy={Math.random() * 100} r="1" fill="white" />
-                        {/each}
+                        <path d="M 0 50 Q 25 30, 50 50 T 100 50 T 150 50 T 200 50" stroke="white" fill="none" stroke-width="2"/>
+                        <path d="M 0 60 Q 25 40, 50 60 T 100 60 T 150 60 T 200 60" stroke="white" fill="none" stroke-width="1.5" opacity="0.7"/>
+                        <path d="M 0 70 Q 25 50, 50 70 T 100 70 T 150 70 T 200 70" stroke="white" fill="none" stroke-width="1" opacity="0.5"/>
                     </svg>
 				</div>
 			</div>
 			<!-- Right Card -->
 			<div class="bg-[#111] rounded-[32px] p-10 md:p-12 text-white min-h-[400px] flex flex-col relative overflow-hidden">
 				<div class="relative z-10">
-					<div class="text-xs text-gray-400 mb-2">Your data is safe with us.</div>
-					<h3 class="text-2xl font-medium max-w-xs">We're built to protect your privacy by default.</h3>
+					<div class="text-xs text-gray-400 mb-2">Privacy & security.</div>
+					<h3 class="text-2xl font-medium max-w-xs">Your metabolic data stays secure and private.</h3>
 				</div>
-				<!-- Blurred Text Graphic -->
+				<!-- Encrypted data visualization -->
 				<div class="absolute bottom-8 right-8 text-right font-mono text-3xl opacity-30 blur-[2px] select-none pointer-events-none">
-					<div>Elizab|%b$9yT</div>
-					<div>Willi|I7m/@</div>
-					<div>Magn|&5a!</div>
-					<div>Trigly|?Pm_Lw</div>
+					<div>VO₂|%x$9yT</div>
+					<div>VCO₂|I7m/@</div>
+					<div>RER|&5a!</div>
+					<div>Zone|?Pm_Lw</div>
 				</div>
 			</div>
 		</div>
@@ -402,71 +450,83 @@
 
 	<!-- Pricing Section -->
 	<section class="py-24 px-6 md:px-12 max-w-[1400px] mx-auto w-full text-center">
-		<h2 class="text-3xl md:text-4xl font-medium mb-4">Preventive healthcare for everyone.</h2>
+		<h2 class="text-3xl md:text-4xl font-medium mb-4">Clinical precision meets accessibility.</h2>
 		<p class="text-gray-500 text-sm max-w-lg mx-auto mb-16">
-			Top-tier testing, real-time tracking, and dedicated clinician guidance—made affordable. Because investing in prevention is the most important investing of your life.
+			Start with insurance-reimbursed clinical diagnostics, or choose direct athlete performance optimization. Both deliver the same clinical-grade accuracy.
 		</p>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-			<!-- Starter Plan -->
+			<!-- Clinical Plan -->
 			<div class="bg-white rounded-[32px] p-8 text-left flex flex-col shadow-sm">
-				<div class="w-10 h-10 bg-gray-100 rounded-lg mb-6"></div>
-				<h3 class="text-xl font-bold mb-1">Starter</h3>
-				<p class="text-xs text-gray-500 mb-6">Begin your health journey.</p>
+				<div class="w-10 h-10 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
+					<svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M9 12l2 2 4-4"/>
+						<circle cx="12" cy="12" r="10"/>
+					</svg>
+				</div>
+				<h3 class="text-xl font-bold mb-1">Clinical</h3>
+				<p class="text-xs text-gray-500 mb-6">Insurance-reimbursed diagnostics.</p>
 				
 				<div class="flex items-baseline gap-1 mb-1">
-					<span class="text-2xl font-bold">€199</span>
-					<span class="text-xs text-gray-500">/yr</span>
+					<span class="text-2xl font-bold">Covered</span>
 				</div>
-				<div class="text-[10px] text-gray-400 mb-8">Pay in installments with Klarna. <span class="bg-pink-100 text-pink-600 px-1 rounded">Klarna.</span></div>
+				<div class="text-[10px] text-gray-400 mb-8">Through medical partners and insurance billing.</div>
 
 				<ul class="space-y-4 mb-8 flex-1">
 					<li class="flex gap-3 text-xs text-gray-600">
 						<span class="text-green-500 shrink-0">{@html Check}</span>
-						Two tests a year covering 40+ essential biomarkers.
+						Clinically validated metabolic diagnostics via medical partners.
 					</li>
 					<li class="flex gap-3 text-xs text-gray-600">
 						<span class="text-green-500 shrink-0">{@html Check}</span>
-						Measure your Biological Age and Aging Rate with every test.
+						True breath-by-breath O₂/CO₂ gas exchange measurement.
 					</li>
 					<li class="flex gap-3 text-xs text-gray-600">
 						<span class="text-green-500 shrink-0">{@html Check}</span>
-						Clinician Notes and personalized Action Plan to guide your health.
+						AI-powered interpretation and clinical reporting.
 					</li>
 				</ul>
 
-				<button class="w-full bg-black text-white py-3 rounded-lg text-xs font-bold hover:bg-gray-800 transition-colors">Join now</button>
+				<button class="w-full bg-black text-white py-3 rounded-lg text-xs font-bold hover:bg-gray-800 transition-colors">Find a Partner</button>
 			</div>
 
-			<!-- Core Plan -->
-			<div class="bg-white rounded-[32px] p-8 text-left flex flex-col shadow-sm border-2 border-orange-100 relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-orange-100 text-orange-600 text-[10px] font-bold px-3 py-1 rounded-bl-xl">POPULAR</div>
-				<div class="w-10 h-10 bg-orange-50 rounded-lg mb-6"></div>
-				<h3 class="text-xl font-bold mb-1">Core</h3>
-				<p class="text-xs text-gray-500 mb-6">The most advanced longevity membership.</p>
+			<!-- Performance Plan -->
+			<div class="bg-white rounded-[32px] p-8 text-left flex flex-col shadow-sm border-2 border-primary-100 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-primary-100 text-primary-700 text-[10px] font-bold px-3 py-1 rounded-bl-xl">FOR ATHLETES</div>
+				<div class="w-10 h-10 bg-primary-50 rounded-lg mb-6 flex items-center justify-center">
+					<svg class="w-6 h-6 text-primary-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+					</svg>
+				</div>
+				<h3 class="text-xl font-bold mb-1">Performance</h3>
+				<p class="text-xs text-gray-500 mb-6">Direct athlete optimization platform.</p>
 				
 				<div class="flex items-baseline gap-1 mb-1">
-					<span class="text-2xl font-bold">€399</span>
+					<span class="text-2xl font-bold">€499</span>
 					<span class="text-xs text-gray-500">/yr</span>
 				</div>
-				<div class="text-[10px] text-gray-400 mb-8">Pay in installments with Klarna. <span class="bg-pink-100 text-pink-600 px-1 rounded">Klarna.</span></div>
+				<div class="text-[10px] text-gray-400 mb-8">Includes device and unlimited breath analysis.</div>
 
 				<ul class="space-y-4 mb-8 flex-1">
 					<li class="flex gap-3 text-xs text-gray-600">
 						<span class="text-green-500 shrink-0">{@html Check}</span>
-						Full Core Test of 60+ Biomarkers plus a follow-up with 40+ biomarkers to track change.
+						Personal CORTEX LIFE mobile breath analyzer device.
 					</li>
 					<li class="flex gap-3 text-xs text-gray-600">
 						<span class="text-green-500 shrink-0">{@html Check}</span>
-						First test includes an extended hormonal and Vitamin panel for deeper insights.
+						Unlimited metabolic testing with real-time training zones.
 					</li>
 					<li class="flex gap-3 text-xs text-gray-600">
 						<span class="text-green-500 shrink-0">{@html Check}</span>
-						Clinician Notes and a personalized Action Plan built on your most complete lab testing profile.
+						Advanced AI insights: recovery signals, metabolic flexibility, longevity indicators.
+					</li>
+					<li class="flex gap-3 text-xs text-gray-600">
+						<span class="text-green-500 shrink-0">{@html Check}</span>
+						Longitudinal breath-data tracking and performance optimization.
 					</li>
 				</ul>
 
-				<button class="w-full bg-black text-white py-3 rounded-lg text-xs font-bold hover:bg-gray-800 transition-colors">Join now</button>
+				<button class="w-full bg-black text-white py-3 rounded-lg text-xs font-bold hover:bg-gray-800 transition-colors">Get Started</button>
 			</div>
 		</div>
 	</section>
@@ -484,15 +544,25 @@
 					<span class="text-gray-400 transition-transform duration-200 {faq.open ? 'rotate-45' : ''}">{@html Plus}</span>
 				</button>
                 {#if faq.open}
-                    <div class="px-4 pb-4 text-xs text-gray-500">
-                        Placeholder answer for "{faq.question}". This would contain detailed information about the service.
+                    <div class="px-4 pb-4 text-xs text-gray-500 leading-relaxed">
+                        {#if i === 0}
+                            CORTEX LIFE measures true breath-by-breath gas exchange (O₂ and CO₂), not inferred estimates. While wearables use heart rate and motion sensors to guess metabolic activity, we deliver clinical-grade spiroergometry data—the same technology used in medical diagnostics and elite sports science.
+                        {:else if i === 1}
+                            Breath gas analysis reveals your actual metabolic state: fat vs. carb oxidation rates, aerobic capacity (VO₂max), training zones based on real gas exchange, recovery status, and metabolic flexibility. This data can't be inferred from heart rate or motion alone.
+                        {:else if i === 2}
+                            Yes. CORTEX LIFE starts with reimbursed, clinically validated metabolic diagnostics through medical partners. We work with clinics and physicians who can bill insurance for diagnostic testing, making clinical-grade metabolic insights accessible.
+                        {:else if i === 3}
+                            No. CORTEX LIFE is a mobile breath gas analyzer. After initial setup, you can perform metabolic testing anywhere—during training, at home, or on the go. The device pairs with your smartphone for real-time analysis.
+                        {:else if i === 4}
+                            Our AI layer translates complex gas exchange data (VO₂, VCO₂, RER) into actionable insights: personalized training zones, recovery recommendations, metabolic flexibility scores, and longevity indicators. It learns from your longitudinal breath data to provide increasingly personalized guidance.
+                        {/if}
                     </div>
                 {/if}
 			{/each}
 		</div>
 		<div class="text-center mt-12">
 			<button class="bg-white border border-gray-200 px-6 py-3 rounded text-xs font-medium hover:bg-gray-50 transition-colors">
-				View all Frequently Asked Questions
+				View All FAQs
 			</button>
 		</div>
 	</section>
@@ -501,19 +571,55 @@
 	<footer class="bg-[#F5F5F3] py-16 px-6 md:px-12 text-[11px] text-gray-500">
 		<div class="max-w-[1400px] mx-auto">
 			<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-8">
-				<div class="flex items-center gap-2">
-					<div class="grid grid-cols-2 gap-[2px]">
-						<div class="w-1 h-1 bg-black rounded-full"></div>
-						<div class="w-1 h-1 bg-black rounded-full"></div>
-						<div class="w-1 h-1 bg-black rounded-full"></div>
-						<div class="w-1 h-1 bg-black rounded-full"></div>
+				<div class="flex items-center gap-3">
+					<div class="w-7 h-7 text-black">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask
+								id="mask0_footer"
+								style="mask-type:luminance"
+								maskUnits="userSpaceOnUse"
+								x="3"
+								y="1"
+								width="18"
+								height="22"
+							>
+								<path d="M3 1H20.7794V22.3353H3V1Z" fill="white" />
+							</mask>
+							<g mask="url(#mask0_footer)">
+								<path
+									d="M14.1516 3.24638L12.4034 2.77795L10.9302 8.27606L9.60014 3.31233L7.85194 3.78076L9.28896 9.14369L5.70969 5.56443L4.42993 6.84419L8.35594 10.7702L3.46671 9.46017L2.99829 11.2083L8.34038 12.6397C8.27922 12.3759 8.24687 12.1011 8.24687 11.8187C8.24687 9.81953 9.86746 8.19894 11.8666 8.19894C13.8657 8.19894 15.4863 9.81953 15.4863 11.8187C15.4863 12.0993 15.4544 12.3724 15.394 12.6347L20.2489 13.9356L20.7173 12.1874L15.354 10.7503L20.2436 9.44012L19.7751 7.69196L14.412 9.12898L17.9913 5.54972L16.7115 4.26998L12.84 8.14156L14.1516 3.24638Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M15.3888 12.655C15.2389 13.2887 14.9225 13.8579 14.4883 14.314L18.0056 17.8313L19.2853 16.5515L15.3888 12.655Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M14.4529 14.3508C14.0135 14.7996 13.4582 15.1345 12.8354 15.3071L14.1153 20.0836L15.8635 19.6151L14.4529 14.3508Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M12.7701 15.3246C12.4812 15.3989 12.1784 15.4384 11.8663 15.4384C11.5319 15.4384 11.2082 15.393 10.9008 15.3082L9.61981 20.089L11.368 20.5574L12.7701 15.3246Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M10.839 15.2905C10.2258 15.1093 9.68038 14.7702 9.24994 14.3201L5.72406 17.8459L7.00382 19.1257L10.839 15.2905Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M9.22084 14.2889C8.79778 13.836 8.48962 13.2743 8.34294 12.6505L3.47211 13.9556L3.94053 15.7038L9.22084 14.2889Z"
+									fill="currentColor"
+								/>
+							</g>
+						</svg>
 					</div>
-					<span class="text-lg font-bold tracking-tight text-black">HOLO</span>
+					<span class="text-lg font-bold tracking-tight text-black">CORTEX LIFE</span>
 				</div>
 				<div class="flex flex-wrap gap-6 font-medium text-gray-600">
-					<a href="#" class="hover:text-black">Biomarkers</a>
+					<a href="#" class="hover:text-black">Technology</a>
+					<a href="#" class="hover:text-black">For Athletes</a>
+					<a href="#" class="hover:text-black">For Clinics</a>
 					<a href="#" class="hover:text-black">FAQ</a>
-					<a href="#" class="hover:text-black">Blog</a>
 					<a href="#" class="hover:text-black">Terms & Conditions</a>
 					<a href="#" class="hover:text-black">Privacy Policy</a>
 				</div>
@@ -525,9 +631,9 @@
 			</div>
 			
 			<div class="space-y-4 leading-relaxed opacity-60">
-				<p>Holo is a technology company, not a laboratory or medical provider. All lab and medical services are provided by independent third parties, who set their own pricing, terms and conditions. Access to certain providers, if does not recommend or refer healthcare providers. Holo does not offer medical advice, lab services, diagnosis, treatment, or medical opinions. Its services do not replace medical care or consultations with a licensed provider. If you have questions about lab results, consult a primary care physician or other licensed provider. All information provided by Holo is for general informational purposes only.</p>
-				<p>Holo's membership pricing includes prepaid access to certain third-party lab services. Some items and services require additional payments beyond standard membership pricing. For more details, see our Terms & Conditions.</p>
-				<p>By providing your phone number, you agree to receive text messages from Holo. Message and data rates may apply. Message frequency varies.</p>
+				<p>CORTEX LIFE is a technology company providing mobile breath gas analysis devices and AI-powered metabolic interpretation software. Medical diagnostic services are provided by independent licensed healthcare providers and medical partners. CORTEX LIFE does not provide medical advice, diagnosis, or treatment. The device and software are intended to support clinical decision-making and performance optimization, not replace professional medical consultation.</p>
+				<p>Insurance reimbursement availability varies by provider and region. Clinical pathway pricing is determined by medical partners according to local insurance billing practices. Performance pathway pricing includes device hardware and unlimited software access. For complete details, see our Terms & Conditions.</p>
+				<p>By using CORTEX LIFE services, you agree to our data collection and privacy practices. All breath analysis data is encrypted and stored securely. Message and data rates may apply for mobile app usage.</p>
 			</div>
 		</div>
 	</footer>
